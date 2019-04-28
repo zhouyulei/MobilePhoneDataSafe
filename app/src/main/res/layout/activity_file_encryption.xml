@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg_splash"
+    tools:context="com.zhou.mobilesafe.activity.FileEncryptionActivity">
+
+    <TextView
+        android:text="文件加密"
+        style="@style/TitleStyle" />
+
+    <TextView
+        android:id="@+id/btn"
+        android:layout_marginTop="25dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="路径选择"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="@drawable/selector_atool_item_bg"
+        android:drawableLeft="@mipmap/btn_star"/>
+
+    <TextView
+        android:id="@+id/tv"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="路径描述:"
+        android:textColor="@color/gainsboro"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/et_path"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/edit_text_style"
+        android:gravity="start"
+        android:hint="这里显示选定文件的路径"
+        android:textSize="20sp" />
+
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="要加密上述文件，请牢记自己输入的密钥"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/et_encrypt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:inputType="numberPassword"
+        android:background="@drawable/edit_text_style"
+        android:hint="请输入加密密钥"
+        android:maxLines="1"
+        android:textSize="19sp"
+        android:singleLine="true" />
+    <!--android:inputType="textPassword"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/encryptionButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="加密保存"/>
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="cancel"
+            android:text="取消"/>
+    </LinearLayout>
+
+
+</LinearLayout>

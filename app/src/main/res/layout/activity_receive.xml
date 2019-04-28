@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zhou.mobilesafe.activity.ReceiveActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="接收信息列表"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:background="@color/olivedrab"
+        android:textSize="23sp"
+        android:textStyle="bold"/>
+
+    <com.zhou.mobilesafe.view.FocusTextView
+        android:text="ListView条目的顺序请从下往上点击，方可先对AES密钥解密，进而解密短信内容"
+        android:textColor="#000"
+        android:singleLine="true"
+        android:padding="5dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="2dp"
+        android:id="@+id/et_decrypasswod00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edit_text_style"
+        android:hint="点击条目3显示加密密钥的第1部分"
+        android:maxLines="1"
+        android:textSize="19sp"
+        android:singleLine="true" />
+    <EditText
+        android:layout_marginTop="3dp"
+        android:id="@+id/et_decrypasswod01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edit_text_style"
+        android:hint="点击条目2显示加密密钥的第2部分"
+        android:maxLines="1"
+        android:textSize="19sp"
+        android:singleLine="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="合并密钥并解密"
+        android:onClick="onClick"/>
+    <EditText
+        android:layout_marginTop="3dp"
+        android:id="@+id/et_decrypasswod02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edit_text_style"
+        android:hint="点上方按钮显示解密真实AES密钥"
+        android:maxLines="1"
+        android:textSize="19sp"
+        android:singleLine="true" />
+    <ListView
+        android:id="@+id/list_receive"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+
+</LinearLayout>

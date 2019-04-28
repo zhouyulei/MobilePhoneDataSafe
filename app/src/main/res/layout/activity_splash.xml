@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhou.mobilesafe.activity.InitActivity"
+    android:id="@+id/rl_root"
+    android:background="@mipmap/bg_splash">
+
+    <ImageView
+        android:id="@+id/logo_img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/logo"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数据安全保护系统"
+        android:layout_below="@id/logo_img"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/tv_version_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="版本名称"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/tv_name"
+        android:layout_centerHorizontal="true"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowColor="#f00"
+        android:shadowRadius="5"/>
+
+    <ProgressBar
+        android:layout_below="@id/tv_version_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"/>
+
+</RelativeLayout>

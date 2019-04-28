@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:background="@mipmap/bg_splash"
+    tools:context="com.zhou.mobilesafe.activity.HomeActivity">
+
+    <TextView
+        android:text="功能列表"
+        style="@style/TitleStyle" />
+
+    <!-- android:ellipsize="end"添加省略点的所在位置 -->
+    <!-- 想让文字出现跑马灯效果,必须让其获取焦点 -->
+    <!-- android:marqueeRepeatLimit="marquee_forever"一直滚动属性 -->
+<!-- <TextView
+	    android:text="突然想起你，笑了笑自己，每个人心中，都有个秘密，如果换一个时间认识你，可能会有更好的结局，你还像他们谈论的那样，一提起过去就变得沉默，其实这样的生活也不错，爱回忆的人不快乐，绝望的人不轻易悲伤，快乐的人只能故作坚强，别把我的消息带回家乡，未来很长，一切难讲。"
+	    android:textColor="#000"
+	    android:singleLine="true"
+	    android:padding="5dp"
+	    android:ellipsize="marquee"
+	    android:focusable="true"
+	    android:marqueeRepeatLimit="marquee_forever"
+	    android:focusableInTouchMode="true"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"/>-->
+    <!--  自定义控件达到滚动效果(其实就是重新原有的TextView,让其一直能够获取焦点即可) -->
+
+    <com.zhou.mobilesafe.view.FocusTextView
+		android:text="这里是数据安全保护系统，时刻为您的手机保驾护航，让您时刻保持手机安全，乐享生活无忧"
+		android:textColor="#000"
+		android:singleLine="true"
+		android:padding="5dp"
+		android:ellipsize="marquee"
+		android:marqueeRepeatLimit="marquee_forever"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+	<GridView
+		android:id="@+id/gv_home"
+		android:layout_marginTop="20dp"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:numColumns="auto_fit"
+		android:verticalSpacing="50dp">
+	</GridView>
+
+</LinearLayout>

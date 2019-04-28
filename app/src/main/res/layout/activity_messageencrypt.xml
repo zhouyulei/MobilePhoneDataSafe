@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg_message"
+    tools:context="com.zhou.mobilesafe.activity.MessageEncryptActivity">
+
+    <TextView
+        style="@style/TitleStyle"
+        android:text="短信保护"/>
+
+    <TextView
+        android:id="@+id/bt_send_aes"
+        android:layout_marginTop="35dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送加密密钥"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="@drawable/selector_atool_item_bg"
+        android:drawableLeft="@mipmap/btn_star"/>
+
+    <TextView
+        android:id="@+id/bt_send_message"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送加密短信"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="@drawable/selector_atool_item_bg"
+        android:drawableLeft="@mipmap/btn_star"/>
+
+    <TextView
+        android:id="@+id/bt_receive"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="解密本地短信"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="@drawable/selector_atool_item_bg"
+        android:drawableLeft="@mipmap/btn_star"/>
+    <TextView
+        android:id="@+id/tv_sms_backup"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="短信备份"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="@drawable/selector_atool_item_bg"
+        android:drawableLeft="@mipmap/btn_star"/>
+    <ProgressBar
+        android:id="@+id/pb_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.ProgressBar.Horizontal"/>
+
+
+</LinearLayout>

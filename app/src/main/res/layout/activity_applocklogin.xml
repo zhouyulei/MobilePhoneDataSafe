@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg_splash"
+    tools:context="com.zhou.mobilesafe.activity.AppLockLoginActivity">
+
+    <TextView
+        android:text="程序锁"
+        style="@style/TitleStyle" />
+
+    <com.zhou.mobilesafe.view.FocusTextView
+        android:text="初次登入程序锁模块，请先设置程序锁密码，下次直接进入程序列表界面"
+        android:textColor="#000"
+        android:singleLine="true"
+        android:padding="5dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--<Button
+        android:layout_marginTop="30dp"
+        android:text="点击设置密码"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:onClick="clickSetpsd"/>-->
+
+
+</LinearLayout>
